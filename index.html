@@ -105,7 +105,8 @@
 
     .slide-photo.portrait {
       flex-direction: row;
-      gap: 40px;
+      gap: 50px;
+      padding: 120px 60px 100px;
     }
 
     .slide-photo .photo-wrapper {
@@ -324,20 +325,24 @@
         padding: 15px 20px;
       }
 
-      /* On mobile, always stack caption below */
-      .slide-photo.portrait {
-        flex-direction: column;
-      }
-
       .slide-photo.portrait .caption {
-        max-width: 100%;
-        text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
 
       .control-btn {
         width: 44px;
         height: 44px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .slide-photo.portrait {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .slide-photo.portrait .caption {
+        text-align: center;
       }
     }
 
@@ -380,9 +385,7 @@
 
     <!-- Controls -->
     <div class="controls" id="controls">
-      <button class="control-btn" id="prevBtn" aria-label="Previous slide">◀</button>
       <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">⏸</button>
-      <button class="control-btn" id="nextBtn" aria-label="Next slide">▶</button>
       <div class="slide-counter" id="slideCounter">1 / 1</div>
     </div>
 
@@ -524,20 +527,8 @@
       }
 
       setupControls() {
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
         const playPauseBtn = document.getElementById('playPauseBtn');
         const slideshow = document.getElementById('slideshow');
-
-        prevBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          this.prevSlide();
-        });
-
-        nextBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          this.nextSlide();
-        });
 
         playPauseBtn.addEventListener('click', (e) => {
           e.stopPropagation();
