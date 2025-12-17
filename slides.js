@@ -55,8 +55,7 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/poppy and kk on national.jpg",
-      caption: "Poppy and KK"
+      src: "media/poppy and kk on national.jpg"
     },
     {
       type: "photo",
