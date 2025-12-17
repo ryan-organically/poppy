@@ -98,7 +98,7 @@ const config = {
     // Closing text slide
     {
       type: "text",
-      content: "A husband of 50 years, a father for 66"
+      content: "A husband of 52 years, a father for 66"
     }
   ]
 };
