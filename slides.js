@@ -44,17 +44,6 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/luau 4 siblings.jpg",
-      caption: "With his four children"
-    },
-    {
-      type: "photo",
-      src: "media/kids and poppy.jpg",
-      caption: "Poppy and the grandchildren",
-      captionLeft: true
-    },
-    {
-      type: "photo",
       src: "media/poppy and kk on national.jpg"
     },
     {
@@ -92,6 +81,57 @@ const config = {
     {
       type: "photo",
       src: "media/jerome skull.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/2 crists 2 scanlons.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry and Donna Crist.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Poppy and terry 2.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Terry Peggy and the kids.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/bubby and erin.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/crying at erins graduation.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/family at benihana.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/jerry and terry.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/luau 4 siblings.jpg",
+      caption: "With his four children"
+    },
+    {
+      type: "photo",
+      src: "media/masked up.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/with cassidy and kk.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/kids and poppy.jpg",
+      caption: "Poppy and the grandchildren",
+      captionLeft: true
     },
 
     // Closing text slide
