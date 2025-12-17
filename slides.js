@@ -71,6 +71,26 @@ const config = {
       type: "photo",
       src: "media/Jerome at breakfast.jpg"
     },
+    {
+      type: "photo",
+      src: "media/Jerome Crist Portrait.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerome and offspring.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Dana and Ty with grandpa.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry and Erin.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/jerome skull.jpg"
+    },
 
     // Closing text slide
     {
