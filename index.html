@@ -291,9 +291,15 @@
     /* Slide Counter */
     .slide-counter {
       position: absolute;
-      right: 20px;
+      right: 70px;
       font-size: 0.9rem;
       opacity: 0.7;
+    }
+
+    /* Fullscreen Button */
+    .fullscreen-btn {
+      position: absolute;
+      right: 15px;
     }
 
     /* Pause Indicator */
@@ -408,6 +414,7 @@
     <div class="controls" id="controls">
       <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">||</button>
       <div class="slide-counter" id="slideCounter">1 / 1</div>
+      <button class="control-btn fullscreen-btn" id="fullscreenBtn" aria-label="Fullscreen">⛶</button>
     </div>
 
     <!-- Loading -->
@@ -552,11 +559,17 @@
 
       setupControls() {
         const playPauseBtn = document.getElementById('playPauseBtn');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
         const slideshow = document.getElementById('slideshow');
 
         playPauseBtn.addEventListener('click', (e) => {
           e.stopPropagation();
           this.togglePlayPause();
+        });
+
+        fullscreenBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.toggleFullscreen();
         });
 
         // Click on slideshow to toggle play/pause
