@@ -61,7 +61,7 @@ const config = {
     {
       type: "photo",
       src: "media/colleen and poppy.jpg",
-      caption: "Poppy and Colleen",
+      caption: "Jerry and Colleen",
       captionLeft: true
     },
     {
