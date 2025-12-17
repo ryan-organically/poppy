@@ -50,7 +50,8 @@ const config = {
     {
       type: "photo",
       src: "media/kids and poppy.jpg",
-      caption: "Poppy and the grandchildren"
+      caption: "Poppy and the grandchildren",
+      captionLeft: true
     },
     {
       type: "photo",
@@ -60,7 +61,8 @@ const config = {
     {
       type: "photo",
       src: "media/colleen and poppy.jpg",
-      caption: "Poppy and Colleen"
+      caption: "Poppy and Colleen",
+      captionLeft: true
     },
     {
       type: "photo",
@@ -81,7 +83,8 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/Dana and Ty with grandpa.jpg"
+      src: "media/Dana and Ty with grandpa.jpg",
+      captionLeft: true
     },
     {
       type: "photo",

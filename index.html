@@ -126,6 +126,10 @@
       padding: 120px 60px 100px;
     }
 
+    .slide-photo.portrait.caption-left {
+      flex-direction: row-reverse;
+    }
+
     .slide-photo .photo-wrapper {
       display: flex;
       align-items: center;
@@ -393,7 +397,7 @@
     <div id="slidesContainer"></div>
 
     <!-- Pause Indicator -->
-    <div class="pause-indicator" id="pauseIndicator">⏸</div>
+    <div class="pause-indicator" id="pauseIndicator">||</div>
 
     <!-- Progress Bar -->
     <div class="progress-container">
@@ -402,7 +406,7 @@
 
     <!-- Controls -->
     <div class="controls" id="controls">
-      <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">⏸</button>
+      <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">||</button>
       <div class="slide-counter" id="slideCounter">1 / 1</div>
     </div>
 
@@ -485,6 +489,9 @@
             img.onload = function() {
               if (img.naturalHeight > img.naturalWidth) {
                 slideEl.classList.add('portrait');
+                if (slide.captionLeft) {
+                  slideEl.classList.add('caption-left');
+                }
               } else {
                 slideEl.classList.add('landscape');
               }
@@ -700,7 +707,7 @@
 
       updatePlayPauseButton() {
         const btn = document.getElementById('playPauseBtn');
-        btn.textContent = this.isPlaying ? '⏸' : '▶';
+        btn.textContent = this.isPlaying ? '||' : '▶';
         btn.setAttribute('aria-label', this.isPlaying ? 'Pause' : 'Play');
       }
 
@@ -717,7 +724,7 @@
 
       showPauseIndicator() {
         const indicator = document.getElementById('pauseIndicator');
-        indicator.textContent = this.isPlaying ? '▶' : '⏸';
+        indicator.textContent = this.isPlaying ? '▶' : '||';
         indicator.classList.add('show');
 
         setTimeout(() => {
