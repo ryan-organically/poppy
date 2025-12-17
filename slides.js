@@ -8,9 +8,9 @@ const config = {
   // -----------------------------------------
   // MEMORIAL INFORMATION
   // -----------------------------------------
-  title: "In Loving Memory",           // Main title (or loved one's name)
-  subtitle: "Grandfather's Name",       // Subtitle or name
-  dates: "1940 – 2024",                // Life dates
+  title: "Jerome Crist II",
+  subtitle: "In Loving Memory",
+  dates: "1930 – 2025",
   showHeader: true,                     // Set to false to hide the header
 
   // -----------------------------------------
@@ -33,42 +33,49 @@ const config = {
   // -----------------------------------------
 
   slides: [
-    // Opening text slide
-    {
-      type: "text",
-      content: "In Loving Memory",
-      subtitle: "A celebration of life"
-    },
-
-    // Sample photo slides - replace these with your photos
     {
       type: "photo",
-      src: "media/sample1.jpg",
-      caption: "Add your first photo to the media folder"
+      src: "media/Bubby and poppy wedding pic.jpg"
     },
     {
       type: "photo",
-      src: "media/sample2.jpg",
-      caption: "Then update this file with the filename"
+      src: "media/bubby and poppy.jpg",
+      caption: "At the Grand Canyon"
     },
     {
       type: "photo",
-      src: "media/sample3.jpg"
-      // No caption - just the photo
+      src: "media/luau 4 siblings.jpg",
+      caption: "With his four children"
     },
-
-    // Example video slide (uncomment to use)
-    // {
-    //   type: "video",
-    //   src: "media/family-video.mp4",
-    //   caption: "Special moments"
-    // },
+    {
+      type: "photo",
+      src: "media/kids and poppy.jpg",
+      caption: "Poppy and the grandchildren"
+    },
+    {
+      type: "photo",
+      src: "media/poppy and kk on national.jpg",
+      caption: "Poppy and KK"
+    },
+    {
+      type: "photo",
+      src: "media/colleen and poppy.jpg",
+      caption: "Poppy and Colleen"
+    },
+    {
+      type: "photo",
+      src: "media/popopy and erin bus.jpg",
+      caption: "Giving a bus tour"
+    },
+    {
+      type: "photo",
+      src: "media/Jerome at breakfast.jpg"
+    },
 
     // Closing text slide
     {
       type: "text",
-      content: "Forever in Our Hearts",
-      subtitle: "Thank you for being part of our lives"
+      content: "A husband of 50 years, a father for 66"
     }
   ]
 };
