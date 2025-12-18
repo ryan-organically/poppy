@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Jerome Crist II - In Loving Memory (1930-2025)</title>
-  <meta name="description" content="In loving memory of Jerome Crist II (1930-2025). A true and honorable man, a husband of 52 years, a father for 66.">
+  <title>Jerome Charles Crist, Jr. - In Loving Memory (1930-2025)</title>
+  <meta name="description" content="In loving memory of Jerome Charles Crist, Jr. (1930-2025). A true and honorable man, a husband of 52 years, a father for 66.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="webicon.png">
   <link rel="apple-touch-icon" href="webicon.png">
 
   <!-- OpenGraph (social sharing) -->
-  <meta property="og:title" content="Jerome Crist II - In Loving Memory">
+  <meta property="og:title" content="Jerome Charles Crist, Jr. - In Loving Memory">
   <meta property="og:description" content="A true and honorable man. A husband of 52 years, a father for 66. (1930-2025)">
   <meta property="og:image" content="https://jeromecrist.com/media/Jerome%20Crist%20Portrait.jpg">
   <meta property="og:url" content="https://jeromecrist.com">
@@ -19,7 +22,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jerome Crist II - In Loving Memory">
+  <meta name="twitter:title" content="Jerome Charles Crist, Jr. - In Loving Memory">
   <meta name="twitter:description" content="A true and honorable man. A husband of 52 years, a father for 66. (1930-2025)">
   <meta name="twitter:image" content="https://jeromecrist.com/media/Jerome%20Crist%20Portrait.jpg">
   <style>
@@ -33,8 +36,7 @@
     }
 
     html, body {
-      height: 100%;
-      overflow: hidden;
+      min-height: 100%;
       font-family: 'Georgia', 'Times New Roman', serif;
       background: #000;
       color: #fff;
@@ -46,7 +48,7 @@
     .slideshow {
       position: relative;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background: #000;
     }
 
@@ -388,6 +390,172 @@
     .loading.hidden {
       display: none;
     }
+
+    /* ============================================
+       OBITUARY SECTION
+       ============================================ */
+    .obituary {
+      background: #000;
+      padding: 60px 5vw 80px;
+      width: 90vw;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .obituary h2 {
+      font-family: 'Tangerine', cursive;
+      font-size: 5.5rem;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 50px;
+      line-height: 1.1;
+      max-width: 40vw;
+    }
+
+    .obituary-content {
+      display: flex;
+      gap: 60px;
+    }
+
+    .obituary-text {
+      flex: 1;
+      max-width: 55%;
+    }
+
+    .obituary-text p {
+      margin-bottom: 24px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+      text-align: justify;
+    }
+
+    .obituary-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .obituary .services {
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid #c9a227;
+      padding: 20px 25px;
+      margin: 30px 0;
+    }
+
+    .obituary .services p {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .obituary .services p:last-child {
+      margin-bottom: 0;
+    }
+
+    .obituary a {
+      color: #a8c4d9;
+      text-decoration: none;
+    }
+
+    .obituary a:hover {
+      text-decoration: underline;
+    }
+
+    /* Timeline */
+    .timeline {
+      width: 35%;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(255,255,255,0.2);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -34px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: #c9a227;
+      border-radius: 50%;
+    }
+
+    .timeline-year {
+      font-size: 0.9rem;
+      color: #c9a227;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .timeline-event {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 12px;
+    }
+
+    .timeline-image {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .timeline-item.visible .timeline-image {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @media (max-width: 968px) {
+      .obituary-content {
+        flex-direction: column;
+      }
+
+      .obituary-text {
+        max-width: 100%;
+      }
+
+      .timeline {
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .obituary {
+        padding: 40px 20px 60px;
+      }
+
+      .obituary h2 {
+        font-size: 2.5rem;
+        max-width: 100%;
+      }
+
+      .obituary-text p {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -420,6 +588,72 @@
     <!-- Loading -->
     <div class="loading" id="loading">Loading slideshow...</div>
   </div>
+
+  <!-- Obituary Section -->
+  <section class="obituary">
+    <h2>A Decorated Serviceman to his country and community.</h2>
+
+    <div class="services">
+      <p>Family and friends will gather to celebrate Jerome's life on Friday December 19, 2025 from 5pm-8pm at Jefferson Memorial Funeral Home, 301 Curry Hollow Rd, Pittsburgh PA, 15236.</p>
+      <p>A mass of Christian Burial will take place at 10:00am on Saturday December 20th at St. Elizabeth of Hungary Church, 1 Grove Place, Pittsburgh PA 15236. Please meet at the church.</p>
+    </div>
+
+    <div class="obituary-content">
+      <div class="obituary-text">
+        <p>Jerome C. "Chirpy" Crist Jr., a beloved father, veteran, and cherished member of the Pittsburgh community, passed away on December 16, 2025, at the age of 95 after a long and happy life.</p>
+
+        <p>Born on August 2, 1930, in Pittsburgh, PA, Jerome lived a life dedicated to service, family, and faith. While his given name was Jerome you may have known him by one of his many nicknames such as: Chirpy, Jerry, Sep, Poppy or Fancy.</p>
+
+        <p>Jerome was raised in the Carrick neighborhood of Pittsburgh. In his early years he found his strength as a swimmer. After high school his athleticism served him in the Air Force, where he served his country with honor during the Korean war and went on to be a member of the American Legion. He spent 40 years of his life as a letter carrier and a school bus driver for the Thomas Jefferson School District. When he wasn't delivering the mail or bringing children safely to and from school, he found joy in the simple things such as watching the Pirates or the Steelers play and spending time with family.</p>
+
+        <p>A devoted member of St. Elizabeth of Hungary Church, Jerome's faith guided him throughout his life. He was always willing to offer a prayer or a blessing to those who needed it.</p>
+
+        <p>Jerome is survived by his children, Jerome Crist III, Terrence Crist (Peggy), Kathleen Scanlon (William), and Colleen Crist; grandchildren, Patrick (Neha), Erin (Brandon), Ryan, Dana, Ty, and Cassidy; great-grandchildren Priya and Mila. He will also be remembered by his extended family and the community he served.</p>
+
+        <p>He is preceded in death by his parents Jerome and Nellie Crist, and siblings John Crist and Virginia Moury. He goes on to be reunited with his loving spouse of 52 years Donna Crist, where she can once again show him the way.</p>
+
+        <p>Online condolences can be made at <a href="https://www.jeffersonmemorial.com/obituaries/jerome-crist/obituary" target="_blank" rel="noopener">Jefferson Memorial</a>.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1930</div>
+          <div class="timeline-event">Born in Pittsburgh, PA</div>
+          <img src="media/Jerome Crist Portrait.jpg" alt="Jerome Crist" class="timeline-image">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">1950s</div>
+          <div class="timeline-event">Served in the U.S. Air Force during the Korean War</div>
+          <img src="media/jerome skull.jpg" alt="Young Jerome" class="timeline-image">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">1973</div>
+          <div class="timeline-event">Married Donna, the love of his life</div>
+          <img src="media/Bubby and poppy wedding pic.jpg" alt="Wedding day" class="timeline-image">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">1960s-2000s</div>
+          <div class="timeline-event">40 years as a letter carrier and school bus driver</div>
+          <img src="media/popopy and erin bus.jpg" alt="Bus driver days" class="timeline-image">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Through the years</div>
+          <div class="timeline-event">Devoted father to four children</div>
+          <img src="media/luau 4 siblings.jpg" alt="With his children" class="timeline-image">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Proud Poppy</div>
+          <div class="timeline-event">Cherished grandfather and great-grandfather</div>
+          <img src="media/kids and poppy.jpg" alt="With grandchildren" class="timeline-image">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Load configuration -->
   <script src="slides.js"></script>
@@ -766,6 +1000,27 @@
         document.getElementById('loading').textContent =
           'Error: slides.js not found. Please create a slides.js file.';
       }
+
+      // Timeline scroll animation
+      const timelineItems = document.querySelectorAll('.timeline-item');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      timelineItems.forEach(item => {
+        observer.observe(item);
+      });
     });
   </script>
 </body>

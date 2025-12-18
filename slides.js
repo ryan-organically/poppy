@@ -8,7 +8,7 @@ const config = {
   // -----------------------------------------
   // MEMORIAL INFORMATION
   // -----------------------------------------
-  title: "Jerome Crist II",
+  title: "Jerome Charles Crist, Jr.",
   subtitle: "In Loving Memory",
   dates: "1930 – 2025",
   showHeader: true,                     // Set to false to hide the header
@@ -39,40 +39,7 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/bubby and poppy.jpg",
-      caption: "At the Grand Canyon"
-    },
-    {
-      type: "photo",
-      src: "media/poppy and kk on national.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/colleen and poppy.jpg",
-      caption: "Jerry and Colleen",
-      captionLeft: true
-    },
-    {
-      type: "photo",
-      src: "media/popopy and erin bus.jpg",
-      caption: "Giving a bus tour"
-    },
-    {
-      type: "photo",
-      src: "media/Jerome at breakfast.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/Jerome Crist Portrait.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/Jerome and offspring.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/Dana and Ty with grandpa.jpg",
-      captionLeft: true
+      src: "media/Jerry as a kid.jpg"
     },
     {
       type: "photo",
@@ -84,23 +51,23 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/2 crists 2 scanlons.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/Jerry and Donna Crist.jpg"
-    },
-    {
-      type: "photo",
-      src: "media/Poppy and terry 2.jpg"
-    },
-    {
-      type: "photo",
       src: "media/Terry Peggy and the kids.jpg"
     },
     {
       type: "photo",
-      src: "media/bubby and erin.jpg"
+      src: "media/bubby and poppy.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Armed Jerry.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/kids and poppy.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry's early family.jpg"
     },
     {
       type: "photo",
@@ -108,20 +75,39 @@ const config = {
     },
     {
       type: "photo",
+      src: "media/Jerry dress blues.jpg"
+    },
+    {
+      type: "photo",
       src: "media/family at benihana.jpg"
     },
     {
       type: "photo",
-      src: "media/jerry and terry.jpg"
+      src: "media/colleen and poppy.jpg"
     },
     {
       type: "photo",
-      src: "media/luau 4 siblings.jpg",
-      caption: "With his four children"
+      src: "media/poppy and baby ryan.jpg"
     },
     {
       type: "photo",
-      src: "media/masked up.jpg"
+      src: "media/Jerry, sister, mother nellie, and father.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Kk at paramount.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerome Crist Portrait.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/popopy and erin bus.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry Sr. and wife.jpg"
     },
     {
       type: "photo",
@@ -129,9 +115,99 @@ const config = {
     },
     {
       type: "photo",
-      src: "media/kids and poppy.jpg",
-      caption: "Poppy and the grandchildren",
-      captionLeft: true
+      src: "media/Shirtless jerry.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/jerry and terry.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Dana and Ty with grandpa.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Young servicemen.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry and erin at paramount.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/luau 4 siblings.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Hardy and me.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/poppy and kk on national.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerome and offspring.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/jerry and erin prom.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry and Donna Crist.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/masked up.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Sep walking KK down the aisle.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/2 crists 2 scanlons.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerome at breakfast.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Ryan and poppy.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/kk and the girls at paramount.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Just married sign.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/bubby and erin.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Jerry on a 4 wheeler.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Poppy and terry 2.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/jerry and the girls.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/poppy and ry at tj game.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/Donna and Jerry in the aisle.jpg"
     },
 
     // Closing text slide
