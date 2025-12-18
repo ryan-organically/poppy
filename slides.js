@@ -43,6 +43,14 @@ const config = {
     },
     {
       type: "photo",
+      src: "media/mom and I scrapbook.jpg"
+    },
+    {
+      type: "photo",
+      src: "media/graduation 1948.jpg"
+    },
+    {
+      type: "photo",
       src: "media/Jerry and Erin.jpg"
     },
     {
