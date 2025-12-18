@@ -10,7 +10,7 @@ const config = {
   // -----------------------------------------
   title: "Jerome Charles Crist, Jr.",
   subtitle: "In Loving Memory",
-  dates: "1930 – 2025",
+  dates: "Aug 2, 1930 - Dec 16, 2025",
   showHeader: true,                     // Set to false to hide the header
 
   // -----------------------------------------
